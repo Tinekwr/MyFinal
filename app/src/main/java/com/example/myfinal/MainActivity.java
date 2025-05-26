@@ -109,7 +109,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnWaterRecord = findViewById(R.id.btnWaterRecord);
+        btnWaterRecord.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, WaterRecordActivity.class);
+            startActivity(intent);
+        });
+
     }
+
+
 
     private void fetchWeather(String locationId) {
         progressBar.setVisibility(View.VISIBLE);

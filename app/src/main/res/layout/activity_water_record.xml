@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvDrank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日已喝水：0ml"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnAddWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+50ml"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"/>
+</LinearLayout>
