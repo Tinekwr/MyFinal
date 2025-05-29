@@ -30,9 +30,9 @@
         <ImageView
             android:id="@+id/ivWaterImage"
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/heshui"
-            android:layout_marginBottom="24dp" />
+            android:layout_height="300dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/heshui" />
 
     </LinearLayout>
 </ScrollView>

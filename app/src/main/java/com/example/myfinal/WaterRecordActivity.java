@@ -60,7 +60,7 @@ public class WaterRecordActivity extends AppCompatActivity {
         }
     }
 
-    private String getToday() {
+    public static String getToday() {
         return new SimpleDateFormat("yyyyMMdd", Locale.getDefault()).format(new Date());
     }
 }
