@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     private String currentTemp = null;
     private String currentHumidity = null;
 
-    // 省会城市及其 locationId（你可以添加更多城市）
     private final Map<String, String> cityMap = new HashMap<String, String>() {{
         put("北京", "101010100");
         put("天津", "101030100");
@@ -102,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(android.widget.AdapterView<?> parent) {
-                //nothing
+                // nothing
             }
         });
 
@@ -120,6 +119,9 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, WaterRecordActivity.class);
             startActivity(intent);
         });
+
+        scheduleDailyReminder();
+
 
     }
 
